@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,136 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+.black{
+  background-color: black;
+  color: white;
+}
+.semi-black{
+  background-color: #101010;
+}
+.grey{
+  background-color: #1d1d1d;
+}
+.arrow-icon{
+  height: 17px;
+  position: relative;
+  bottom: 6px;
+  left: auto;
+  right: auto
+  ;
+}
+.navbar-nav .arrow-button{
+  margin-left: 18px;
+}
+.arrow-button{
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.upper{
+  position: fixed;
+  top: 0px;
+  left: 241px;
+  width: 100%;
+  height: 64px;
+}
+.right-nav{
+  position: fixed;
+  right: 24px;
+}
+.right-nav button{
+  font-weight: bold;
+  font-size: 14px;
+  padding: 8px 36px;
+  border-radius: 21px;
+  border-color: #101010;
+}
+.right-nav .btn-light:hover{
+  font-size: 16px;
+  padding: 6px 32.7px;
+}
+.right-nav .semi-black{
+  border-color: #101010;
+  color: white;
+}
+.right-nav .semi-black:hover{
+  border-color: #101010;
+  color: white;
+  font-size: 16px;
+  padding: 6px 32.7px;
+}
+.side{
+  position: fixed;
+  display: block;
+  top: 0px;
+  left: 0px;
+  width: 241px;
+  height: 100%;
+}
+.content{
+  overflow: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  height: 100%;
+}
+.content::-webkit-scrollbar {
+  display: none;
+}
+.background{
+  height: 100%;
+  width: 100%;
+  background-color: grey;
+  position: fixed;
+}
+.sidenav{
+  list-style-type: none;
+  margin-left: -22px;
+}
+.sidenav .nav-link{
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  opacity: 80%;
+  cursor: pointer;
+}
+.sidenav .nav-link:hover{
+  color: white;
+  opacity: 100%;
+}
+.sidenav .nav-link.active{
+  opacity: 100%;
+}
+.sidenav .icon{
+  height: 24px;
+  width: 24px;
+  margin-right: 15px;
+}
+.sidenav p{
+  margin: 0px;
+}
+.bottom-side{
+  margin-top: 25px;
+}
+.playlist{
+  height: 24px;
+  width: 24px;
+  margin-right: 15px;
+  background-color: white;
+}
+.playlist.liked{
+  background: rgb(56,11,193);
+  background: linear-gradient(135deg, rgba(56,11,193,1) 0%, rgba(191,230,218,1) 100%);
+}
+.playlist .icon{
+  height: 12px;
+  width: 12px;
+  margin-top: 0px;
+  margin-left: 6px;
+}
+.spotify{
+  height: 40px;
+  margin: 24px;
 }

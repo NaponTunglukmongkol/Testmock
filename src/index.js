@@ -2,12 +2,26 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import Error from './page/Error';
+import Home from './page/Home';
 import reportWebVitals from './reportWebVitals';
+import 'bootstrap';
+import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/js/bootstrap.js';
+import 'bootstrap/dist/js/bootstrap.bundle.min';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <BrowserRouter>
+    <Routes>
+      <Route path='/' element={<App />}>
+        <Route
+        index
+        element={<Home />}/>
+      </Route>
+      <Route path='*' element={<Error />}/>
+    </Routes>
+  </BrowserRouter>,
   document.getElementById('root')
 );
 
