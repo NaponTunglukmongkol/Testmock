@@ -46,7 +46,7 @@
 }
 .grey{
   background: rgb(18,18,18);
-  background: linear-gradient(0deg, rgba(18,18,18,1) 80%, rgba(31,31,31,1) 100%);
+  background: linear-gradient(0deg, rgba(18,18,18,1) 70%, rgba(31,31,31,1) 100%);
   color: white;
 }
 .display{

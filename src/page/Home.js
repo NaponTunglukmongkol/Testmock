@@ -5,6 +5,7 @@ import Card from '../component/Card.js';
 function Home() {
   return (
     <div className="grey display fullscreen content">
+      <div className='grey fullscreen'>
         <h4 className='title'>เพลย์ลิสต์แนะนำสำหรับคุณ</h4>
         <div className='d-flex card-placement'>
           <Card />
@@ -49,6 +50,7 @@ function Home() {
           <Card />
           <Card />
         </div>
+      </div>
     </div>
   );
 }
