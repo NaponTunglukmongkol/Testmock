@@ -45,7 +45,13 @@
   background-color: #101010;
 }
 .grey{
-  background-color: #1d1d1d;
+  background: rgb(18,18,18);
+  background: linear-gradient(0deg, rgba(18,18,18,1) 80%, rgba(31,31,31,1) 100%);
+  color: white;
+}
+.display{
+  position: relative;
+  left: 241px;
 }
 .arrow-icon{
   height: 17px;
@@ -90,6 +96,9 @@
   border-color: #101010;
   color: white;
 }
+.right-nav .semi-black:active{
+  border-color: #101010;
+}
 .right-nav .semi-black:hover{
   border-color: #101010;
   color: white;
@@ -108,6 +117,7 @@
   overflow: scroll;
   -ms-overflow-style: none;
   scrollbar-width: none;
+  position: relative;
   height: 100%;
 }
 .content::-webkit-scrollbar {
@@ -118,6 +128,10 @@
   width: 100%;
   background-color: grey;
   position: fixed;
+}
+.fullscreen{
+  height: 100%;
+  width: 100%;
 }
 .sidenav{
   list-style-type: none;

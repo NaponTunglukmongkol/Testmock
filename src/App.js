@@ -8,9 +8,7 @@ function App() {
     <div className='background'>
       <UpperNav />
       <SideNav />
-      <div className='content'>
-        <Outlet />
-      </div>
+      <Outlet />
     </div>
   );
 }

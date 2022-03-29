@@ -1,0 +1,26 @@
+.cards{
+    width: 180px;
+    height: 258px;
+    border-radius: 5px;
+    background-color: #181818;
+    padding: 15px;
+    margin-right: 24px;
+}
+.img-border{
+    background-color: white;
+    border-radius: 5px;
+    height: 150px;
+    width: 150px;
+}
+.cardtitle{
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+    margin: 15px 0px 0px 0px;
+    padding: 0px;
+}
+.cardtext{
+    color: grey;
+    margin: 0px;
+    padding: 0px;
+}
