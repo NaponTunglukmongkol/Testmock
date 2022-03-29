@@ -5,6 +5,9 @@
 }
 .card-placement{
     margin-left: 32px;
+    margin-right: 32px;
+    width: 85%;
+    overflow: hidden;
 }
 .pad{
     padding-bottom: 40px;

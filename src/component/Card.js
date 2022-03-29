@@ -1,4 +1,5 @@
 import '../css/card.css'
+import Music from '../resource/pictures/music.jpg'
 
 function Card(props) {
   return (
@@ -10,7 +11,7 @@ function Card(props) {
           </svg>
         </div>
       </div>
-      <div className='img-border'></div>
+      <img className='img-border' src={props.image? props.image : Music }/>
       <p className='cardtitle'>{props.title}</p>
       <p className='cardtext'>{props.description}</p>
     </div>

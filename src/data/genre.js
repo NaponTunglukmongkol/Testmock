@@ -1,52 +1,59 @@
+import Aa from '../resource/pictures/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA.jpg';
+import Culture from '../resource/pictures/Ah I see you are a Tako of culture as well.png';
+import Kirby from '../resource/pictures/Kirby Pokerface.jpg';
+import Plsno from '../resource/pictures/Pls no.jpg';
+import Smile from '../resource/pictures/Smile.jpg';
+import Violet from '../resource/pictures/Violet stops playing.jpg';
+
 let genre = [
     {
         id: 0,
         title: 'T-Pop Now',
         description: 'เพลงไทยป๊อปโดนใจ อัพเดตให้คุณฟังทุกสัปดาห์. ศิลปิน: ATLAS',
         genre: 'programming-local-strategic-playlists',
-        image: null,
+        image: Aa,
     },
     {
         id: 1,
         title: 'Hot Hits Thailand',
         description: 'ที่สุดเพลงฮิตในประเทศไทย รวมเพลงเด่นจากทั่วโลก. ศิลปิน: Tattoo Colour',
         genre: 'programming-local-strategic-playlists',
-        image: null,
+        image: Culture,
     },
     {
         id: 2,
         title: 'เพลงไทยยอดนิยม',
         description: 'เพลงไทยมาแรงที่เราอยากแนะนำให้คุณได้ฟัง. ศิลปิน: MILLI',
         genre: 'programming-local-strategic-playlists',
-        image: null,
+        image: Kirby,
     },
     {
         id: 3,
         title: 'เป๊ะ ดัง ฟังเวอร์',
         description: 'เป๊ะปังจากทุกที่ เพลงดังจากทุกแนว ปังเวอร์ทั้งเพลย์ลิสต์. ศิลปิน: LUSS',
         genre: 'programming-local-strategic-playlists',
-        image: null,
+        image: Plsno,
     },
     {
         id: 4,
         title: 'ฮิตติดกระแส',
         description: 'เพลงใหม่มาแรง เพลงฮิตล่าสุด และเพลงอิงกระแสตอนนี้. ศิลปิน: SARAN x Maimhon',
         genre: 'programming-local-strategic-playlists',
-        image: null,
+        image: Smile,
     },
     {
         id: 5,
         title: 'Hits & Viral',
         description: 'รวมเพลงสากลสุดฮิต และเพลงในกระแสตอนนี้. The latest hits and trending tracks right now. Cover: salem ilese, TOMORROW X TOGETHER, Alan Walker',
         genre: 'programming-local-strategic-playlists',
-        image: null,
+        image: Violet,
     },
     {
         id: 6,
         title: 'ลูกทุ่ง อินเทรนด์',
         description: 'เพลงลูกทุ่งที่กำลังอยู่ในกระแส และลูกทุ่งฮิตโดนใจ ในเพลย์ลิสต์เดียว. ศิลปิน: เนสกาแฟ ศรีนคร',
         genre: 'programming-local-strategic-playlists',
-        image: null,
+        image: Aa,
     },
     {
         id: 7,
@@ -60,21 +67,21 @@ let genre = [
         title: 'ฮิปฮอป ของมันต้องฟัง',
         description: 'รวมที่สุดของฮิปฮอปไทยไว้ที่นี่แล้ว เพราะของมันต้องฟัง!. ศิลปิน: IRONBOY x URBOYTJ',
         genre: 'programming-local-strategic-playlists',
-        image: null,
+        image: Plsno,
     },
     {
         id: 9,
         title: "Today's Top Hits",
         description: 'Anitta is on top of the Hottest 50!',
         genre: 'programming-local-strategic-playlists',
-        image: null,
+        image: Smile,
     },
     {
         id: 10,
         title: 'เป็นท้อ',
         description: 'เป็นทุกสถานะ เป็นเพื่อน เป็นพี่ เป็นที่ปรึกษา แล้วก็เป็นท้อด้วย',
         genre: 'programming-local-strategic-playlists',
-        image: null,
+        image: Culture,
     },
     {
         id: 11,

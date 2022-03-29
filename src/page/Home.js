@@ -9,7 +9,7 @@ function Home() {
 
   return (
     <div className="grey display fullscreen content">
-      <div className='grey fullscreen test'>
+      <div className='grey-gradient fullscreen test'>
         {data.map((category) => (
           <div className='pad'>
             <h4 className='title'>{category.title}</h4>
@@ -18,6 +18,7 @@ function Home() {
                 <Card 
                 key={genre.id}
                 title={genre.title}
+                image={genre.image}
                 description={genre.description} />
               ))}
             </div>
