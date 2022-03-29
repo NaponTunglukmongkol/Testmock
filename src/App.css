@@ -202,3 +202,63 @@ svg.icon{
   margin-top: 5px;
   margin-left: 5px;
 }
+.prompt{
+  background-color: #0d72ea;
+  width: 332px;
+  position: absolute;
+  border-radius: 10px;
+  padding: 16px;
+  z-index: 2;
+  display: none;
+}
+.toggle{
+  display: block;
+}
+.prompt p{
+  font-size: 14px;
+  line-height: 15px;
+}
+.prompt h5{
+  font-size: 18px;
+  font-weight: bold;
+}
+.prompt svg{
+  position: absolute;
+  fill: #0d72ea;
+  transform: rotate(180deg);
+  margin-left: -30px;
+  margin-top: -10px;
+}
+.library.prompt{
+  margin-top: 170px;
+  margin-left: 173px;
+}
+.playlisted.prompt{
+  margin-top: 235px;
+  margin-left: 195px;
+}
+.liked.prompt{
+  margin-top: 275px;
+  margin-left: 255px;
+}
+.prompt button{
+  font-weight: bold;
+  font-size: 15px;
+  padding: 8px 36px;
+  border-radius: 21px;
+  border-color: #0d72ea;
+}
+.prompt .primary{
+  color: white;
+  border-color: none;
+  margin-right: 5px;
+}
+.prompt .primary:hover{
+  color: white;
+  font-size: 16px;
+  padding: 6px 33px;
+}
+.prompt .btn-light:hover{
+  font-size: 16px;
+  padding: 6px 35px;
+}
