@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import Error from './page/Error';
 import Home from './page/Home';
+import Genre from './page/Genre';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.css';
@@ -18,6 +19,7 @@ ReactDOM.render(
         <Route
         index
         element={<Home />}/>
+        <Route path='/genre/:genreId' element={<Genre />} />
       </Route>
       <Route path='*' element={<Error />}/>
     </Routes>

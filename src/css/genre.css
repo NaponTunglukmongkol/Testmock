@@ -1,0 +1,7 @@
+.card--placement{
+    margin-left: 32px;
+    margin-right: 32px;
+    width: 85%;
+    display: flex;
+    flex-wrap: wrap;
+}
