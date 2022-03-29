@@ -46,3 +46,8 @@ let category = [
 export function getCategory(){
     return category;
 }
+
+export function getCategoryName(string){
+    let cat = category.find((check) => check.genre == string)
+    return cat.title
+}

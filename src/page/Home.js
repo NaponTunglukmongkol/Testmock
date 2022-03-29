@@ -3,6 +3,7 @@ import '../css/home.css';
 import Card from '../component/Card.js';
 import { getCategory } from '../data/category.js';
 import { getGenre } from '../data/genre.js';
+import { NavLink } from 'react-router-dom';
 
 function Home() {
   let data = getCategory();
@@ -12,7 +13,13 @@ function Home() {
       <div className='grey-gradient fullscreen test'>
         {data.map((category) => (
           <div className='pad'>
-            <h4 className='title'>{category.title}</h4>
+            <h4 className='title'>
+              {category.genre != null? <NavLink
+              className='link'
+              to={`/genre/${category.genre}`}>
+                {category.title}
+              </NavLink> : category.title}
+            </h4>
             <div className='d-flex card-placement'>
               {getGenre(category.genre).map((genre) => (
                 <Card 
