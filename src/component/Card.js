@@ -1,6 +1,6 @@
 import '../css/card.css'
 
-function Card() {
+function Card(props) {
   return (
     <div className='cards'>
       <div className='playbutton'>
@@ -11,8 +11,8 @@ function Card() {
         </div>
       </div>
       <div className='img-border'></div>
-      <p className='cardtitle'>Test</p>
-      <p className='cardtext'>test</p>
+      <p className='cardtitle'>{props.title}</p>
+      <p className='cardtext'>{props.description}</p>
     </div>
   );
 }

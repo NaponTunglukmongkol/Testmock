@@ -2,6 +2,7 @@ import '../css/font.css';
 import '../css/home.css';
 import Card from '../component/Card.js';
 import { getCategory } from '../data/category.js';
+import { getGenre } from '../data/genre.js';
 
 function Home() {
   let data = getCategory();
@@ -13,14 +14,12 @@ function Home() {
           <div className='pad'>
             <h4 className='title'>{category.title}</h4>
             <div className='d-flex card-placement'>
-              <Card />
-              <Card />
-              <Card />
-              <Card />
-              <Card />
-              <Card />
-              <Card />
-              <Card />
+              {getGenre(category.genre).map((genre) => (
+                <Card 
+                key={genre.id}
+                title={genre.title}
+                description={genre.description} />
+              ))}
             </div>
           </div>
         ))}

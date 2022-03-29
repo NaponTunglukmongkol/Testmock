@@ -28,6 +28,9 @@
     color: grey;
     margin: 0px;
     padding: 0px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .playbutton{
     z-index: 10;
