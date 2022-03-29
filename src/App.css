@@ -51,7 +51,29 @@
 }
 .display{
   position: relative;
+  z-index: -1;
+  padding-top: 64px;
+  top: -64px;
   left: 241px;
+}
+.content{
+  overflow: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  position: relative;
+}
+.content::-webkit-scrollbar {
+  display: none;
+}
+.background{
+  height: 100%;
+  width: 100%;
+  background-color: grey;
+  position: fixed;
+}
+.fullscreen{
+  height: 100%;
+  width: 100%;
 }
 .arrow-icon{
   height: 17px;
@@ -113,26 +135,7 @@
   width: 241px;
   height: 100%;
 }
-.content{
-  overflow: scroll;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-  position: relative;
-  height: 100%;
-}
-.content::-webkit-scrollbar {
-  display: none;
-}
-.background{
-  height: 100%;
-  width: 100%;
-  background-color: grey;
-  position: fixed;
-}
-.fullscreen{
-  height: 100%;
-  width: 100%;
-}
+
 .sidenav{
   list-style-type: none;
   margin-left: -22px;

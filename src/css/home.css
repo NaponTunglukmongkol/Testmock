@@ -1,9 +1,14 @@
 .title{
     margin-left: 32px;
-    padding-top: 24px;
     margin-bottom: 24px;
     font-weight: bold;
 }
 .card-placement{
     margin-left: 32px;
+}
+.pad{
+    padding-bottom: 40px;
+}
+.test{
+    padding-top: 24px;
 }
