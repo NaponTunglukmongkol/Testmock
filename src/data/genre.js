@@ -4,6 +4,9 @@ import Kirby from '../resource/pictures/Kirby Pokerface.jpg';
 import Plsno from '../resource/pictures/Pls no.jpg';
 import Smile from '../resource/pictures/Smile.jpg';
 import Violet from '../resource/pictures/Violet stops playing.jpg';
+import Glock from '../resource/pictures/Glockodachi.jpg';
+import Judah from '../resource/pictures/judah.jpg';
+import Salt from '../resource/pictures/Salt.jpg';
 
 let genre = [
     {
@@ -115,7 +118,7 @@ let genre = [
         id: 15,
         title: 'Random',
         description: 'Random',
-        genre: 'Popular new releases',
+        genre: 'NMF-PopularNewReleases-page',
         image: null,
     },
     {
@@ -139,13 +142,85 @@ let genre = [
         genre: 'NMF-PopularNewReleases-page',
         image: null,
     },
+    {
+        id: 19,
+        title: 'Random',
+        description: 'This is just a random long long long text',
+        genre: 'mood-home-wrapper',
+        image: Judah,
+    },
+    {
+        id: 20,
+        title: 'Random',
+        description: 'This is just a random long long long text',
+        genre: 'focus-home-shelf',
+        image: Salt,
+    },
+    {
+        id: 21,
+        title: 'Random',
+        description: 'This is just a random long long long text',
+        genre: 'dense-ginger-featured-playlists-no-friday',
+        image: Judah,
+    },
+    {
+        id: 22,
+        title: 'Random',
+        description: 'This is just a random long long long text',
+        genre: 'at-home-playlists',
+        image: Glock,
+    },
+    {
+        id: 23,
+        title: 'Random',
+        description: 'This is just a random long long long text',
+        genre: 'focus-home-shelf',
+        image: Violet,
+    },
+    {
+        id: 24,
+        title: 'Random',
+        description: 'This is just a random long long long text',
+        genre: 'mood-home-wrapper',
+        image: null,
+    },
+    {
+        id: 25,
+        title: 'Random',
+        description: 'This is just a random long long long text',
+        genre: 'NMF-PopularNewReleases-page',
+        image: Kirby,
+    },
+    {
+        id: 26,
+        title: 'Random',
+        description: 'This is just a random long long long text',
+        genre: 'at-home-playlists',
+        image: null,
+    },
+    {
+        id: 16,
+        title: 'Random',
+        description: 'This is just a random long long long long text',
+        genre: 'dense-ginger-featured-playlists-no-friday',
+        image: null,
+    },
 ]
-
+// focus-home-shelf
+// mood-home-wrapper
+// NMF-PopularNewReleases-page
+// dense-ginger-featured-playlists-no-friday
+// at-home-playlists
 export function getAllGenre(){
     return genre;
 }
 
 export function getGenre(string){
-    let gen = genre.filter((checker) => (checker.genre == string));
+    let gen = genre.filter((check) => (check.genre == string));
     return gen;
+}
+
+export function getPlaylist(id){
+    let playlist = genre.find((check) =>(check.id == id));
+    return playlist;
 }

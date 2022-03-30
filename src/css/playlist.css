@@ -1,0 +1,223 @@
+.header{
+    margin-left: 32px;
+    color: white;
+}
+.playlist-image{
+    width: 232px;
+    height: 232px;
+}
+.info{
+    margin-left: 24px;
+}
+.type{
+    font-size: 12px;
+    margin-top: 42px;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+.playlist-title{
+    margin-top: 0px;
+    font-size: 96px;
+    font-weight: bold;
+}
+.playlist-description{
+    margin: 0px;
+    color: grey;
+}
+.playlist-description-2{
+    margin: 0px;
+    color: grey;
+    font-size: 14px;
+}
+.highlight{
+    color: white;
+}
+.small-gap{
+    margin-left: 5px;
+}
+.button-box-place{
+    padding: 24px 32px;
+    height: 104px;
+    margin-top: 10px;
+}
+.play-button{
+    background-color: #1ed760;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    margin-right: 32px;
+}
+.play-button svg{
+    display: block;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+svg.heart{
+    fill: grey;
+    display: block;
+    position: relative;
+    top: 50%;
+    left: 16px;
+    transform: translate(-50%, -50%);
+}
+svg.heart:hover{
+    fill: white;
+}
+svg.dot{
+    fill: grey;
+    display: block;
+    position: relative;
+    top: 50%;
+    left: 40px;
+    transform: translate(-50%, -50%);
+}
+svg.dot:hover{
+    fill: white;
+}
+.song-table{
+    padding: 0px 32px;
+}
+.first-table-row{
+    padding-left: 16px;
+    color: #a7a8a9;
+    font-size: 14px;
+    width: 86.5%;
+    border-bottom: solid #2a3137 1px;
+}
+.first-table-row p{
+    margin-bottom: 8px;
+}
+.first-table-num{
+    font-size: 20px;
+    text-align: left;
+    padding-left: 5px;
+    width: 2%;
+}
+.first-table-title{
+    width: 41.15%;
+}
+.first-table-title p{
+    margin-top: 5px;
+}
+.first-table-album{
+    width: 27.7%;
+}
+.first-table-album p{
+    margin-top: 5px;
+}
+.first-table-date{
+    width: 23%;
+}
+.first-table-date p{
+    margin-top: 5px;
+}
+.first-table-time{
+    text-align: right;
+    width: 4%;
+}
+.first-table-time p{
+    margin-top: 5px;
+}
+.first-table-time svg{
+    fill: grey;
+}
+.table-row{
+    height: 56px;
+    padding-left: 16px;
+    color: #a7a8a9;
+    font-size: 14px;
+    width: 86.5%;
+}
+.table-row p{
+    margin-bottom: 8px;
+}
+.table-row:hover{
+    background-color: #292c2e;
+    color: white;
+}
+.table-num{
+    text-align: left;
+    margin-top: 4px;
+    width: 2%;
+}
+.table-num p{
+    margin-top: 12px;
+}
+.table-title{
+    width: 41.15%;
+}
+.table-title img{
+    width: 40px;
+    height: 40px;
+    display: block;
+    position: relative;
+    top: 50%;
+    left: 20px;
+    transform: translate(-50%, -50%);
+    margin-right: 16px;
+}
+.song-name{
+    margin-top: 12px;
+    line-height: 17px;
+}
+.song-title{
+    color: white;
+}
+.table-title p{
+    margin-bottom: 0px;
+}
+.table-album{
+    width: 27.7%;
+}
+.table-album p{
+    margin-top: 16px;
+}
+.table-date{
+    width: 23%;
+}
+.table-date p{
+    margin-top: 16px;
+}
+.table-row:hover .table-date p{
+    color: #a7a8a9;
+}
+.table-time{
+    text-align: right;
+    width: 4%;
+}
+.table-time p{
+    margin-top: 16px;
+}
+.table-row:hover .table-time p{
+    color: #a7a8a9;
+}
+.table-time svg{
+    fill: grey;
+}
+.content-table{
+    margin-top: 20px;
+}
+.table-num svg{
+    position: absolute;
+    margin-top: 7px;
+    margin-left: -4px;
+}
+.dot-stuff{
+    position: absolute;
+    fill: white;
+    margin-left: 10px;
+    margin-top: 18px;
+}
+.liked-heart{
+    margin-left: -75px;
+    margin-top: 20px;
+    position: absolute;
+}
+.liked-heart:hover{
+    fill: white;
+}
+.hiding{
+    display: none;
+}
