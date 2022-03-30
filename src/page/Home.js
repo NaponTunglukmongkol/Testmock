@@ -7,6 +7,7 @@ import { NavLink } from 'react-router-dom';
 
 function Home() {
   let data = getCategory();
+  console.log(data)
 
   return (
     <div className="grey display fullscreen content">
@@ -20,6 +21,10 @@ function Home() {
                 {category.title}
               </NavLink> : category.title}
             </h4>
+            {category.description == null? <p className='description' /> : 
+            <p className='description'>
+              {category.description}
+            </p> }
             <div className='d-flex card-placement'>
               {getGenre(category.genre).map((genre) => (
                 <Card 

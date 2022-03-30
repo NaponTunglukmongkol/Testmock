@@ -15,31 +15,31 @@ let category = [
         id: 2,
         title: 'Focus',
         genre: 'focus-home-shelf',
-        desciption: 'Music to help you concentrate.'
+        description: 'Music to help you concentrate.'
     },
     {
         id: 3,
         title: 'Mood',
         genre: 'mood-home-wrapper',
-        desciption: 'Playlists to match your mood.'
+        description: 'Playlists to match your mood.'
     },
     {
         id: 4,
         title: 'Popular new releases',
         genre: 'NMF-PopularNewReleases-page',
-        desciption: null,
+        description: null,
     },
     {
         id: 5,
         title: 'ให้เสียงเพลงอยู่เป็นเพื่อนคุณ',
         genre: 'dense-ginger-featured-playlists-no-friday',
-        desciption: null
+        description: null
     },
     {
         id: 6,
         title: 'Soundtrack your home',
         genre: 'at-home-playlists',
-        desciption: null
+        description: null
     },
 ]
 
