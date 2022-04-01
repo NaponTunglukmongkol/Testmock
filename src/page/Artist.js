@@ -7,7 +7,7 @@ import { getSongByArtist } from '../data/songs.js';
 import { NavLink, useParams } from 'react-router-dom';
 import { getArtist } from '../data/artist.js';
 
-function Playlist() {
+function Artist() {
   let param = useParams();
   let artist = getArtist(parseInt(param.artistId));
   let songs = getSongByArtist(artist.name);
@@ -76,4 +76,4 @@ function Playlist() {
   );
 }
 
-export default Playlist;
+export default Artist;

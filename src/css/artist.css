@@ -10,14 +10,14 @@
     color: white;
     font-weight: bold;
 }
-.follow{
+.btn.follow{
     color: white;
     border-color: rgba(255,255,255,.3);
     padding: 2px 10px;
     height: 32px;
     margin-top: 10px;
 }
-.follow:hover{
+.btn.follow:hover{
     color: white;
     border-color: white;
 }
