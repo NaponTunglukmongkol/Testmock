@@ -112,3 +112,8 @@ let songs = [
 export function getSongs(){
     return songs;
 }
+
+export function getSongByArtist(artist){
+    let song = songs.filter((song) => song.artist == artist);
+    return song;
+}

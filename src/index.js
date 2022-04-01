@@ -7,6 +7,7 @@ import Home from './page/Home';
 import Genre from './page/Genre';
 import Search from './page/Search';
 import Playlist from './page/Playlist';
+import Artist from './page/Artist';
 import Login from './page/Login';
 import Signup from './page/Signup';
 import SignupPhone from './page/SignupPhone'
@@ -30,6 +31,7 @@ ReactDOM.render(
         <Route path='/genre/:genreId' element={<Genre />} />
         <Route path='/search' element={<Search />} ></Route>
         <Route path='/playlist/:playlistId' element={<Playlist />} />
+        <Route path='/artist/:artistId' element={<Artist />} />
       </Route>
       <Route path='*' element={<Error />}/>
     </Routes>
