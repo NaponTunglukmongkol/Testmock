@@ -1,4 +1,6 @@
 import Music from '../resource/pictures/music.jpg';
+import { NavLink } from 'react-router-dom';
+import { getArtistId } from '../data/artist.js';
 
 function Song(props) {
 
@@ -35,7 +37,11 @@ function Song(props) {
         <img src={Music} />
         <div className='song-name'>
           <p className='song-title'>{props.title}</p>
-          <p className='song-artist'>{props.artist}</p>
+          <NavLink
+          className='song-artist'
+          to={`/artist/${getArtistId(props.artist)}`}>
+            {props.artist}
+          </NavLink>
         </div>
       </div>
       <div className='table-album'><p>{props.album}</p></div>

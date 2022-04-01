@@ -29,3 +29,8 @@ export function getArtist(id) {
     let artist = artists.find((check) => check.id == id);
     return artist;
 }
+
+export function getArtistId(name) {
+    let artist = artists.find((check) => check.name == name);
+    return artist.id;
+}

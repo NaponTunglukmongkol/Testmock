@@ -45,7 +45,7 @@
     padding: 1px 12px;
     border-radius: 12px;
 }
-.playbutton{
+.search-playbutton{
     z-index: 10;
     position: absolute;
     height: 49px;
@@ -58,14 +58,14 @@
     opacity: 0%;
     transition: margin 0.5s, opacity 0.5s;
 }
-.playicon{
+.search-playicon{
     width: 24px;
     height: 24px;
     margin: auto;
     margin-top: 9px;
     position: relative;
 }
-.top-result-box:hover .playbutton{
+.top-result-box:hover .search-playbutton{
     border-radius: 50%;
     padding: auto;
     margin-top: -50px;
