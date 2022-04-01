@@ -42,11 +42,14 @@
   color: white;
 }
 .semi-black{
-  background-color: #101010;
+  background-color: #080808;
 }
 .grey{
-  background: rgb(18,18,18);
+  background: rgba(18,18,18);
   color: white;
+}
+.darkgrey{
+  background: rgba(31,31,31,1);
 }
 .grey-gradient{
   background: rgb(18,18,18);
@@ -261,4 +264,21 @@ svg.icon{
 .prompt .btn-light:hover{
   font-size: 16px;
   padding: 6px 35px;
+}
+.search-box{
+  margin-left: 20px;
+  width: 350px;
+  height: 30px;
+  border-radius: 15px;
+  background-color: white;
+}
+.search-box svg{
+  margin-left: 5px;
+}
+.searching{
+  outline: none;
+  border: none;
+  margin-left: 5px;
+  margin-top: 2px;
+  width: 80%;
 }

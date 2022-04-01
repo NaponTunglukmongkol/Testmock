@@ -1,0 +1,143 @@
+.login-header{
+    padding: 24px;
+    margin-bottom: 36px;
+    text-align: center;
+    border-bottom: solid 1px rgb(217, 218, 220);
+}
+.signup-body{
+    text-align: center;
+}
+.the-body{
+    width: 450px;
+    margin-right: 0px;
+    display: block;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -0%);
+}
+.or{
+    margin-top: 20px;
+}
+.or p{
+    font-size: 12px;
+    font-weight: bold;
+    width: 50px;
+}
+.line{
+    width: 200px;
+    border-top: solid 1px rgb(217, 218, 220);
+}
+.long-line{
+    width: 450px;
+    border-top: solid 1px rgb(217, 218, 220);
+}
+.login-message{
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 0px;
+}
+.btn.facebook{
+    background-color: rgb(59, 89, 152);
+    color: white;
+    font-weight: bold;
+    width: 450px;
+    height: 48px;
+    border-radius: 24px;
+    margin-top: 10px;
+}
+.btn.facebook:hover{
+    color: white;
+    cursor: default;
+}
+.btn.apple{
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    width: 450px;
+    height: 48px;
+    border-radius: 24px;
+    margin-top: 10px;
+}
+.btn.apple:hover{
+    color: white;
+    cursor: default;
+}
+.btn.google{
+    background-color: white;
+    color: #6a6a6a;
+    font-weight: bold;
+    width: 450px;
+    height: 48px;
+    border-radius: 24px;
+    border: solid 1px #878787;
+    margin-top: 10px;
+}
+.btn.google:hover{
+    color: #6a6a6a;
+    border-color: black;
+    cursor: default;
+}
+.login-form{
+    margin-top: 15px;
+    text-align: left;
+}
+.login-input{
+    padding: 14px;
+    width: 100%;
+    border: solid 1px #878787;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.login-input:hover{
+    border-color: black;
+}
+.login-message-unbold{
+    font-size: 15px;
+    margin-bottom: 0px;
+    color: black;
+    margin-bottom: 5px;
+}
+.login-checkbox{
+    width: 16px;
+    height: 16px;
+    margin-top: 2px;
+    margin-right: 10px;
+}
+.btn.green-login{
+    font-weight: bold;
+    font-size: 15px;
+    padding: 14px 36px;
+    border-radius: 24px;
+    border-color: #fff;
+    background-color: #1ed760;
+    height: 48px;
+    margin-top: -5px;
+}
+.btn.green-login:hover{
+    font-size: 16px;
+    padding: 10px 34px;
+    border-color: #1ed760;
+}
+.noaccount{
+    font-weight: bold;
+    font-size: 18px;
+}
+.btn svg{
+    margin-right: 10px;
+}
+svg.facebook-icon{
+    fill: white;
+    color: white;
+    filter: white;
+}
+.apple-icon{
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+.google-icon{
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}

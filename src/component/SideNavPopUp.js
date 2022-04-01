@@ -1,3 +1,5 @@
+import { NavLink } from 'react-router-dom';
+
 function SideNavPopUp(props) {
     return (
         <div id={props.id} className={props.id + ' prompt'}>
@@ -7,7 +9,10 @@ function SideNavPopUp(props) {
             <h5>{props.title}</h5>
             <p>{props.description}</p>
             <div className='d-flex flex-row-reverse'>
+                <NavLink
+                to={`/login`}>
                 <button className='btn btn-light'>LOG IN</button>
+                </NavLink>
                 <button onClick={() => props.onClick()} className='btn primary'>NOT NOW</button>
             </div>
         </div>

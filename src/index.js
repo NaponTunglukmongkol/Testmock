@@ -7,6 +7,9 @@ import Home from './page/Home';
 import Genre from './page/Genre';
 import Search from './page/Search';
 import Playlist from './page/Playlist';
+import Login from './page/Login';
+import Signup from './page/Signup';
+import SignupPhone from './page/SignupPhone'
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.css';
@@ -14,11 +17,12 @@ import 'bootstrap/dist/js/bootstrap.js';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-
-
 ReactDOM.render(
   <BrowserRouter>
     <Routes>
+      <Route path='/login' element={<Login />}/>
+      <Route path='/signup' element={<Signup />}/>
+      <Route path='/signupphone' element={<SignupPhone />}/>
       <Route path='/' element={<App />}>
         <Route
         index

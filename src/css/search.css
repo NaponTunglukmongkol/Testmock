@@ -1,0 +1,84 @@
+.browse-padding h4{
+    font-weight: bold;
+    color: white;
+}
+.browse-padding{
+    font-weight: bold;
+    padding-left: 30px;
+    padding-top: 5px;
+}
+.browse-area{
+    margin-top: 30px;
+    flex-wrap: wrap;
+    width: 90%;
+}
+.search-padding{
+    font-weight: bold;
+    padding-left: 30px;
+}
+.cropped-image{
+    width: 92px;
+    height: 92px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.cropped-image img{
+    width: 92px;
+    height: 92px;
+}
+.top-result-box{
+    margin-top: 20px;
+    width: 390px;
+    background-color: #181818;
+    padding: 20px;
+    border-radius: 10px;
+}
+.top-result{
+    margin-right: 40px;
+}
+.artist-tag{
+    height: 24px;
+    width: 74px;
+    background-color: #080808;
+    font-size: 14px;
+    padding: 1px 12px;
+    border-radius: 12px;
+}
+.playbutton{
+    z-index: 10;
+    position: absolute;
+    height: 49px;
+    width: 49px;
+    background-color: #1ed760;
+    border-radius: 50%;
+    padding: auto;
+    margin-top: -30px;
+    margin-left: 300px;
+    opacity: 0%;
+    transition: margin 0.5s, opacity 0.5s;
+}
+.playicon{
+    width: 24px;
+    height: 24px;
+    margin: auto;
+    margin-top: 9px;
+    position: relative;
+}
+.top-result-box:hover .playbutton{
+    border-radius: 50%;
+    padding: auto;
+    margin-top: -50px;
+    margin-left: 300px;
+    opacity: 100%;
+}
+.top-result-box:hover{
+    background-color: #242424;
+}
+.song-result-box{
+    height: 220px;
+    overflow: hidden;
+}
+.noresult{
+    margin-top: 30px;
+}

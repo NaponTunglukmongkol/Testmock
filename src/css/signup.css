@@ -1,0 +1,193 @@
+.signup-header{
+    padding: 24px;
+    padding-top: 40px;
+    margin-bottom: 22px;
+    text-align: center;
+}
+.signup-body h3{
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.btn.facebook-signup{
+    background-color: rgb(59, 89, 152);
+    color: white;
+    font-weight: bold;
+    width: 395px;
+    height: 48px;
+    border-radius: 24px;
+    margin-top: 10px;
+}
+.btn.facebook-signup:hover{
+    background-color: #384F81;
+    color: white;
+    width: 425px;
+}
+.btn.google-signup{
+    background-color: white;
+    color: #6a6a6a;
+    font-weight: bold;
+    width: 395px;
+    height: 48px;
+    border-radius: 24px;
+    margin-top: 20px;
+    border: solid 1px #878787;
+}
+.btn.google-signup:hover{
+    color: #6a6a6a;
+    width: 425px;
+}
+.or-signup{
+    margin-top: 20px;
+    margin-left: 30px;
+}
+.or-signup p{
+    color: rgb(127, 127, 127);
+    font-size: 16px;
+    width: 50px;
+}
+.signup-line{
+    width: 175px;
+    margin-top: 12px;
+    border-top: solid 1px rgb(217, 218, 220);
+}
+.signup-input{
+    padding: 14px;
+    width: 100%;
+    border: solid 1px #878787;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+.signup-input:hover{
+    border-color: black;
+}
+.signup-box{
+    margin-top: 20px;
+}
+.phonenumber{
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: rgb(29, 185, 84);
+}
+.phonenumber:hover{
+    color: rgb(59, 215, 114);
+}
+.nickname-input{
+    margin-top: 0;
+}
+.row.signupbox{
+    margin: 0;
+    margin-top: 10px;
+    display: inline;
+}
+.day.signupbox{
+    padding: 0;
+    width: 21%;
+    margin-right: 5%;
+}
+.month.signupbox{
+    padding: 0;
+    width: 45%;
+    margin-right: 5%;
+}
+.year.signupbox{
+    padding: 0;
+    width: 27%;
+}
+.d-flex.signupbox p{
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+.date-input{
+    padding: 14px;
+    width: 100%;
+    border: solid 1px #878787;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.date-input:hover{
+    border-color: black;
+}
+.radio-gender{
+    margin-right: 15px;
+    margin-top: 10px;
+}
+.gender{
+    margin-right: 40px;
+}
+.signup-message-unbold{
+    font-size: 15px;
+    margin-bottom: 0px;
+    color: black;
+    margin-bottom: 5px;
+}
+.signup-checkbox{
+    width: 16px;
+    height: 16px;
+    margin-top: 2px;
+    margin-right: 10px;
+}
+.signup-checkbox-group{
+    margin-top: 40px;
+}
+.signup-message-unbold.share{
+    font-size: 15px;
+    margin-bottom: 0px;
+    color: black;
+    margin-bottom: 5px;
+    width: 90%;
+}
+.signup-center{
+    margin-top: 20px;
+    text-align: center;
+}
+.agreement{
+    font-size: 13px;
+}
+.agreement u{
+    color: rgb(29, 185, 84);
+    text-decoration: underline;
+}
+.btn.green-signup{
+    font-weight: bold;
+    font-size: 15px;
+    padding: 14px 50px;
+    border-radius: 28px;
+    border-color: #fff;
+    background-color: #1ed760;
+    height: 56px;
+    margin-top: -5px;
+}
+.btn.green-signup:hover{
+    font-size: 16px;
+    padding: 12px 48px;
+    border-color: #1ed760;
+}
+.spacing{
+    padding-bottom: 100px;
+}
+.signup-message-unbold a{
+    color: rgb(29, 185, 84);
+}
+.signup-message-unbold a:hover{
+    color: rgb(59, 215, 114);
+}
+.phone-message{
+    font-weight: bold;
+}
+.phone.signupbox{
+    text-align: left;
+    padding: 0;
+    width: 80%;
+}
+.phoneid.signupbox{
+    padding: 0;
+    width: 26%;
+    margin-right: 7%;
+    margin-top: 23.5px;
+}
+.next{
+    text-align: left;
+    margin-top: 40px;
+}
