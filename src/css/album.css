@@ -95,10 +95,22 @@ svg.dot:hover{
     padding-left: 5px;
     width: 2%;
 }
-.first-table-album-title{
-    width: 91.85%;
+.first-table-title{
+    width: 41.15%;
 }
-.first-table-album-title p{
+.first-table-title p{
+    margin-top: 5px;
+}
+.first-table-album{
+    width: 27.7%;
+}
+.first-table-album p{
+    margin-top: 5px;
+}
+.first-table-date{
+    width: 23%;
+}
+.first-table-date p{
     margin-top: 5px;
 }
 .first-table-time{

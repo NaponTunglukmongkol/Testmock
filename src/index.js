@@ -10,6 +10,7 @@ import Playlist from './page/Playlist';
 import Artist from './page/Artist';
 import Login from './page/Login';
 import Signup from './page/Signup';
+import Album from './page/Album';
 import SignupPhone from './page/SignupPhone'
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap';
@@ -32,6 +33,7 @@ ReactDOM.render(
         <Route path='/search' element={<Search />} ></Route>
         <Route path='/playlist/:playlistId' element={<Playlist />} />
         <Route path='/artist/:artistId' element={<Artist />} />
+        <Route path='/album/:albumname' element={<Album />} />
       </Route>
       <Route path='*' element={<Error />}/>
     </Routes>
