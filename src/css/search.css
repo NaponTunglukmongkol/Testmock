@@ -82,3 +82,51 @@
 .noresult{
     margin-top: 30px;
 }
+.search-pc{
+    display: block;
+}
+.search-mobile{
+    display: none;
+}
+@media screen and (max-width: 800px){
+    div.search-pc{
+        display: none;
+    }
+    div.search-mobile{
+        display: block;
+    }
+    .search-padding{
+        padding: 0;
+        padding-left: 20px;
+        margin-top: -14px;
+    }
+    .image-phone-search{
+        width: 56px;
+        height: 56px;
+    }
+    .image-phone-search-artist{
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+    }
+    .search-mobile-name{
+        margin-top: 5px;
+        margin-bottom: 0;
+        margin-left: 10px;
+    }
+    .search-mobile-undername{
+        margin-top: 0;
+        margin-left: 10px;
+        color: rgb(179, 179, 179);
+    }
+    .search-mobile-artist{
+        margin-top: 0;
+        margin-left: 0px;
+        color: rgb(179, 179, 179);
+    }
+    svg.search-mobile-undername{
+        margin-top: 5px;
+        margin-left: 0px;
+        color: rgb(179, 179, 179);
+    }
+}

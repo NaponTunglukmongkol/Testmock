@@ -65,6 +65,7 @@
 }
 .content{
   overflow: scroll;
+  overflow-x: hidden;
   -ms-overflow-style: none;
   scrollbar-width: none;
   position: relative;
@@ -281,4 +282,121 @@ svg.icon{
   margin-left: 5px;
   margin-top: 2px;
   width: 80%;
+}
+.upper .spotify{
+  display: none;
+}
+.phone-upper{
+  display: none;
+}
+.phone-navbar{
+  position: absolute;
+  z-index: 10;
+  background-color: black;
+  height: 100rem;
+  color: white;
+  width: 100%;
+  display: block;
+  top: 0;
+  left: 0;
+  padding: 15px;
+  display: none;
+  font-weight: bold;
+}
+.phone-navbar.show{
+  display: block;
+}
+.phone-navbar svg{
+  position: absolute;
+  right: 15px;
+}
+.phone-navbar h4{
+  font-weight: bold;
+  margin-top: 24px;
+}
+a h4{
+  color: white;
+  text-decoration: none;
+}
+.phone-navbar h1{
+  font-weight: normal;
+  font-size: 45px;
+  margin: 0px;
+}
+.phone-navbar-content .phone-link{
+  color: white;
+  font-weight: bold;
+  margin-bottom: 16px;
+  margin-top: 0px;
+}
+.phone-link a{
+  color: white;
+  text-decoration: none;
+}
+.phone-navbar-content{
+  padding: 25px;
+}
+div.search-bar{
+  display: none;
+}
+@media screen and (max-width: 800px){
+  .side{
+    display: none;
+  }
+  .content{
+    left: 0px;
+  }
+  .upper{
+    left: 0px;
+  }
+  .navbar-toggler{
+    display: none;
+  }
+  .upper .spotify{
+    display: block;
+    margin: 0;
+    margin-left: 10px;
+  }
+  .phone-upper{
+    display: block;
+  }
+  .phone-upper .s{
+    margin-right: 10px;
+  }
+  .phone-upper button{
+    font-weight: bold;
+    font-size: 14px;
+    padding: 8px 36px;
+    border-radius: 21px;
+    border-color: #101010;
+  }
+  .phone-upper .btn-light:hover{
+    font-size: 16px;
+    padding: 6px 32.7px;
+  }
+  div.search-bar{
+    display: block;
+    position: absolute;
+    background-color: rgb(83, 83, 83);
+    height: 54px;
+    width: 100%;
+    margin-top: -11px;
+    margin-left: -12px;
+  }
+  .search-bar svg{
+    color: white;
+    fill: white;
+    top: 50%;
+    margin-top: 0px;
+  }
+  .search-bar input{
+    color: white;
+    margin-top: 12px;
+    outline: none;
+    border: none;
+    background-color: rgb(83, 83, 83);
+  }
+  .search-bar input::placeholder{
+    color: white;
+  }
 }

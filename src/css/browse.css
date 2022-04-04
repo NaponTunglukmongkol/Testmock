@@ -18,3 +18,31 @@
     margin-top: 15px;
     margin-left: 15px;
 }
+.browse-pc{
+    display: block;
+}
+.browse-mobile{
+    text-align: center;
+    width: calc(100% - 64px);
+    /* vertical-align: middle; */
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.browse-mobile h5{
+    font-weight: bold;
+}
+.browse-mobile p{
+    margin-top: 20px;
+    font-size: 14px;
+}
+@media screen and (max-width: 800px){
+    .browse-pc{
+        display: none;
+    }
+    .browse-mobile{
+        display: block;
+    }
+}

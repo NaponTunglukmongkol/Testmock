@@ -76,6 +76,17 @@ svg.dot{
 svg.dot:hover{
     fill: white;
 }
+svg.share{
+    fill: grey;
+    display: none;
+    position: relative;
+    top: 50%;
+    left: 40px;
+    transform: translate(-50%, -50%);
+}
+svg.vertical-dot{
+    display: none;
+}
 .song-table{
     padding: 0px 32px;
 }
@@ -170,6 +181,14 @@ svg.dot:hover{
 .table-album p{
     margin-top: 16px;
 }
+.table-album a{
+    color: white;
+    text-decoration: none;
+}
+.table-album a:hover{
+    text-decoration: underline;
+    color: white;
+}
 .table-date{
     width: 23%;
 }
@@ -216,4 +235,100 @@ svg.dot:hover{
 }
 .hiding{
     display: none;
+}
+@media screen and (max-width: 800px){
+    img.playlist-image{
+        height: 288px;
+        text-align: center;
+        width: 288px;
+        display: block;
+        position: relative;
+        left: 50%;
+        top: 120px;
+        transform: translate(-50%, -50%);
+    }
+    .type{
+        display: none;
+    }
+    h1.playlist-title{
+        font-size: 1.5rem;
+        margin-left: -40px;
+        margin-top: 10px;
+    }
+    p.playlist-description{
+        margin-left: -40px;
+    }
+    div.playlist-description-2{
+        margin-left: -40px;
+    }
+    .bi.spot{
+        display: none;
+    }
+    .highlight{
+        margin-bottom: 0px;
+        margin-top: 10px;
+    }
+    p.small-gap{
+        margin-top: -20px;
+        margin-left: 155px;
+        margin-bottom: 0px;
+    }
+    div.button-box-place{
+        padding: 0px;
+        padding-left: 20px;
+        height: 56px;
+        margin-top: 0px;
+    }
+    div.play-button{
+        position: absolute;
+        right: 0px;
+        margin-right: 15px;
+        margin-top: -30px;
+    }
+    svg.heart{
+        width: 24px;
+        height: 24px;
+    }
+    .button-box-place svg.dot{
+        display: none;
+    }
+    svg.share{
+        fill: grey;
+        display: block;
+    }
+    .song-table .first-table-row{
+        display: none;
+    }
+    .song-table .table-row{
+        width: 100%;
+        padding-left: 0;
+    }
+    div.song-table{
+        padding: 0;
+    }
+    .song-table .table-num{
+        width: 10%;
+        text-align: center;
+    }
+    .song-table .table-date{
+        display: none;
+    }
+    .song-table .table-album{
+        display: none;
+    }
+    .song-table .table-title img{
+        display: none;
+    }
+    .song-table .table-title{
+        width: 90%;
+    }
+    .song-table .table-time{
+        display: none;
+    }
+    .song-table .table-title svg.vertical-dot{
+        display: block;
+        position: absolute;
+        right: 20px;
+        margin-top: -30px;
+    }
 }

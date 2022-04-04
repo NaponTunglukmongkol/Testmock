@@ -21,6 +21,9 @@ function Home() {
                 {category.title}
               </NavLink> : category.title}
             </h4>
+            <h4 className='title-phone'>
+                {category.title}
+            </h4>
             {category.description == null? <p className='description' /> : 
             <p className='description'>
               {category.description}

@@ -15,14 +15,14 @@ function Artist() {
 
   return (
     <div className="grey display fullscreen content">
-    {/* <img className='artist-image' src={Music} /> */}
-      <div className='grey-gradient fullscreen test'>
-        {/* Header */}
+      <div className='grey-gradient fullscreen artist-test'>
+        {/* Header */}<img className='artist-image' src={Music} />
         <div className='header d-flex'>
+          
           <div className='artist-info'>
             <p className='type'>ARTIST</p>
-            <h1 className='playlist-title'>{artist.name}</h1>
-            <div className='playlist-description-2 d-flex'>
+            <h1 className='playlist-title artistic'>{artist.name}</h1>
+            <div className='playlist-description-2 d-flex artistic'>
               <p className='artist-highlight'>
                 200,000 monthly listeners
               </p>
@@ -38,6 +38,10 @@ function Artist() {
             </svg>
           </div>
           <button className='btn follow'>FOLLOW</button>
+          <button className='btn follow-phone'>follow</button>
+          <svg role="img" height="24" width="24" viewBox="0 0 24 24" class="Svg-sc-1bi12j5-0 jgfuCe share-follow">
+            <path d="M18.5 4a1.5 1.5 0 100 3 1.5 1.5 0 000-3zM15 5.5a3.5 3.5 0 111.006 2.455L9 12l7.006 4.045a3.5 3.5 0 11-.938 1.768l-6.67-3.85a3.5 3.5 0 110-3.924l6.67-3.852A3.513 3.513 0 0115 5.5zm-9.5 5a1.5 1.5 0 100 3 1.5 1.5 0 000-3zm13 6.5a1.5 1.5 0 10-.001 3 1.5 1.5 0 00.001-3z"></path>
+          </svg>
           <svg role="img" height="32" width="32" viewBox="0 0 24 24" class="Svg-sc-1bi12j5-0 jgfuCe dot">
             <path d="M4.5 13.5a1.5 1.5 0 100-3 1.5 1.5 0 000 3zm15 0a1.5 1.5 0 100-3 1.5 1.5 0 000 3zm-7.5 0a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"></path>
           </svg>
@@ -45,7 +49,8 @@ function Artist() {
         {/* End of Button box */}
         {/* Table */}
         <div className='song-table'>
-          <div className='first-table-row d-flex'>
+          <h4 className='artist-popular'>Popular</h4>
+          {/* <div className='first-table-row d-flex'>
             <div className='first-table-num'>#</div>
             <div className='first-table-title'><p>TITLE</p></div>
             <div className='first-table-album'><p>ALBUM</p></div>
@@ -57,7 +62,7 @@ function Artist() {
                 </svg>
               </p>
             </div>
-          </div>
+          </div> */}
           <div className='content-table'>
             {songs.map((song) =>(
               <Song
