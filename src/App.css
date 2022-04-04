@@ -336,6 +336,9 @@ a h4{
 .phone-navbar-content{
   padding: 25px;
 }
+div.search-bar{
+  display: none;
+}
 @media screen and (max-width: 800px){
   .side{
     display: none;
@@ -370,5 +373,30 @@ a h4{
   .phone-upper .btn-light:hover{
     font-size: 16px;
     padding: 6px 32.7px;
+  }
+  div.search-bar{
+    display: block;
+    position: absolute;
+    background-color: rgb(83, 83, 83);
+    height: 54px;
+    width: 100%;
+    margin-top: -11px;
+    margin-left: -12px;
+  }
+  .search-bar svg{
+    color: white;
+    fill: white;
+    top: 50%;
+    margin-top: 0px;
+  }
+  .search-bar input{
+    color: white;
+    margin-top: 12px;
+    outline: none;
+    border: none;
+    background-color: rgb(83, 83, 83);
+  }
+  .search-bar input::placeholder{
+    color: white;
   }
 }

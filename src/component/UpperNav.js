@@ -11,6 +11,12 @@ function UpperNav() {
     var isSearchActive = location.pathname == '/search' ? true : false;
     let [searchParams, setSearchParams] = useSearchParams();
 
+    function deleteSearch(){
+        var element = document.getElementById('search');
+        element.value = null;
+        setSearchParams('');
+    }
+
     return (
         <nav className="navbar navbar-expand-lg semi-black upper">
             <div id='phone-navbar' className='phone-navbar'>
@@ -82,7 +88,6 @@ function UpperNav() {
                                         }} />
                                 </div>
                             </li> : ''}
-
                     </ul>
                     <ul className="navbar-nav right-nav ml-auto mb-2 mb-xl-0">
                         <NavLink
@@ -96,14 +101,31 @@ function UpperNav() {
                     </ul>
                 </div>
                 <div className='ml-auto phone-upper'>
-                    <svg role="img" height="16" width="16" fill='white' viewBox="0 0 16 16" class="Svg-sc-1bi12j5-0 kVzeqZ s">
-                        <path d="M7 1.75a5.25 5.25 0 100 10.5 5.25 5.25 0 000-10.5zM.25 7a6.75 6.75 0 1112.096 4.12l3.184 3.185a.75.75 0 11-1.06 1.06L11.304 12.2A6.75 6.75 0 01.25 7z"></path>
-                    </svg>
+                    <NavLink to={`/search`}>
+                        <svg role="img" height="16" width="16" fill='white' viewBox="0 0 16 16" class="Svg-sc-1bi12j5-0 kVzeqZ s">
+                            <path d="M7 1.75a5.25 5.25 0 100 10.5 5.25 5.25 0 000-10.5zM.25 7a6.75 6.75 0 1112.096 4.12l3.184 3.185a.75.75 0 11-1.06 1.06L11.304 12.2A6.75 6.75 0 01.25 7z"></path>
+                        </svg>
+                    </NavLink>
                     <button className='btn btn-light s'>OPEN APP</button>
                     <svg onClick={() => navbarCollapse('phone-navbar')} role="img" height="24" width="24" fill='white' viewBox="0 0 24 24" class="Svg-sc-1bi12j5-0 kVzeqZ">
                         <path d="M21 6H3V4h18v2zm0 14H3v-2h18v2zm0-7H3v-2h18v2z"></path>
                     </svg>
                 </div>
+                {isSearchActive?
+                <div className='search-bar row'>
+                    <svg onClick={() => {navigate(-1)}} role="img" height="24" width="24" title="back-icon-android col-1" aria-labelledby="back-icon" viewBox="0 0 24 24" class="Svg-sc-1bi12j5-0 kVzeqZ col-1"><path d="M22.192 12a1 1 0 01-1 1H5.222l4.793 4.793A1 1 0 018.6 19.207L1.393 12l7.208-7.207a1 1 0 011.414 1.414L5.222 11h15.97a1 1 0 011 1z"></path></svg>
+                    <input id='search' className='col-10' placeholder='Search'
+                    value={searchParams.get("filter") || ""}
+                    onChange={(event) => {
+                        let filter = event.target.value;
+                        if (filter) {
+                            setSearchParams({ filter });
+                        } else {
+                            setSearchParams({});
+                        }
+                    }}></input>
+                    <svg onClick={() => deleteSearch()} height="24" role="img" width="24" viewBox="0 0 24 24" aria-labelledby="x-icon" class="Icon-sc-fe2389-0 dkBEGS col-1"><title id="x-icon">Close</title><path d="M4.93,4.93,19.07,19.07m-14.14,0L19.07,4.93" fill="white" stroke="currentColor" stroke-miterlimit="10"></path></svg>
+                </div> : ''}
             </div>
         </nav>
     );
