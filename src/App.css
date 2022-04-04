@@ -65,6 +65,7 @@
 }
 .content{
   overflow: scroll;
+  overflow-x: hidden;
   -ms-overflow-style: none;
   scrollbar-width: none;
   position: relative;
@@ -281,4 +282,46 @@ svg.icon{
   margin-left: 5px;
   margin-top: 2px;
   width: 80%;
+}
+.upper .spotify{
+  display: none;
+}
+.phone-upper{
+  display: none;
+}
+@media screen and (max-width: 800px){
+  .side{
+    display: none;
+  }
+  .content{
+    left: 0px;
+  }
+  .upper{
+    left: 0px;
+  }
+  .navbar-toggler{
+    display: none;
+  }
+  .upper .spotify{
+    display: block;
+    margin: 0;
+    margin-left: 10px;
+  }
+  .phone-upper{
+    display: block;
+  }
+  .phone-upper .s{
+    margin-right: 10px;
+  }
+  .phone-upper button{
+    font-weight: bold;
+    font-size: 14px;
+    padding: 8px 36px;
+    border-radius: 21px;
+    border-color: #101010;
+  }
+  .phone-upper .btn-light:hover{
+    font-size: 16px;
+    padding: 6px 32.7px;
+  }
 }
