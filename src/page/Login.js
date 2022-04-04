@@ -31,7 +31,9 @@ function Login() {
                             <img className='google-icon' src={Google} />
                             CONTINUE WITH GOOGLE</button>
                     </div>
-                    <div><button className='btn google'>CONTINUE WITH PHONE NUMBER</button></div>
+                    <div>
+                        <button className='btn google login-phone'>CONTINUE WITH PHONE NUMBER</button>
+                    </div>
                     <div className='d-flex or'>
                         <div className='line' />
                         <p className='login-message'>OR</p>

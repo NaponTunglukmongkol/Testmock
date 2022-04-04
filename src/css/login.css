@@ -141,3 +141,26 @@ svg.facebook-icon{
     height: 24px;
     margin-right: 10px;
 }
+@media screen and (max-width: 800px){
+    .btn.google.login-phone{
+        display: none;
+    }
+}
+@media screen and (max-width: 450px){
+    .the-body{
+        width: 100%;
+        padding: 10px;
+    }
+    .btn.facebook{
+        width: 100%;
+    }
+    .btn.google{
+        width: 100%;
+    }
+    .btn.btn.apple{
+        width: 100%;
+    }
+    .long-line{
+        width: 100%;
+    }
+}

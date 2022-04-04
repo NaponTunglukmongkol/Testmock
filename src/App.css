@@ -314,6 +314,10 @@ svg.icon{
   font-weight: bold;
   margin-top: 24px;
 }
+a h4{
+  color: white;
+  text-decoration: none;
+}
 .phone-navbar h1{
   font-weight: normal;
   font-size: 45px;

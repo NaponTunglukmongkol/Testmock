@@ -18,8 +18,14 @@ function UpperNav() {
                     <path d="M3.293 3.293a1 1 0 011.414 0L12 10.586l7.293-7.293a1 1 0 111.414 1.414L13.414 12l7.293 7.293a1 1 0 01-1.414 1.414L12 13.414l-7.293 7.293a1 1 0 01-1.414-1.414L10.586 12 3.293 4.707a1 1 0 010-1.414z"></path>
                 </svg>
                 <div className='phone-navbar-content'>
-                    <h4>Log in</h4>
-                    <h4>Sign up</h4>
+                    <NavLink
+                        to={`/login`}>
+                        <h4>Log in</h4>
+                    </NavLink>
+                    <NavLink
+                        to={`/signup`}>
+                        <h4>Sign up</h4>
+                    </NavLink>
                     <h1>-</h1>
                     <div className='phone-link'>
                         <a href='https://www.spotify.com/sg-en/premium/'>Premium</a>
