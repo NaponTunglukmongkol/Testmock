@@ -42,6 +42,9 @@ function Song(props) {
           to={`/artist/${getArtistId(props.artist)}`}>
             {props.artist}
           </NavLink>
+          <svg fill='white' role="img" height="24" width="24" title="more-icon-android" aria-labelledby="more-icon" data-testid="more-icon" viewBox="0 0 24 24" class="Svg-sc-1bi12j5-0 kVzeqZ vertical-dot">
+            <path d="M10.5 4.5a1.5 1.5 0 103 0 1.5 1.5 0 00-3 0zm0 15a1.5 1.5 0 103 0 1.5 1.5 0 00-3 0zm0-7.5a1.5 1.5 0 103 0 1.5 1.5 0 00-3 0z"></path>
+          </svg>
         </div>
       </div>
       <div className='table-album'><p>{props.album}</p></div>

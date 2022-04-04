@@ -15,25 +15,29 @@ function Playlist() {
     <div className="grey display fullscreen content">
       <div className='grey-gradient fullscreen test'>
         {/* Header */}
-        <div className='header d-flex'>
+        <div className='header d-lg-flex'>
           <img className='playlist-image' src={playlist.image != null ? playlist.image : Music} />
           <div className='info'>
             <p className='type'>PLAYLIST</p>
             <h1 className='playlist-title'>{playlist.title}</h1>
             <p className='playlist-description'>{playlist.description}</p>
-            <div className='playlist-description-2 d-flex'>
-              <p className='highlight'>
-                Spotify
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-dot" viewBox="0 0 16 16">
-                  <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
-                </svg>
-                12345 likes
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-dot" viewBox="0 0 16 16">
-                  <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
-                </svg>
-                10 songs,
-              </p>
-              <p className='small-gap'> 360 hr 20 min</p>
+            <div className='playlist-description-2 d-lg-flex'>
+              <div className='d-lg-flex'>
+                <p className='highlight'>
+                  Spotify
+                </p>
+                <p className='highlight'>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-dot spot" viewBox="0 0 16 16">
+                    <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                  </svg>
+                  12345 likes
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-dot" viewBox="0 0 16 16">
+                    <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                  </svg>
+                  10 songs,
+                </p>
+                <p className='small-gap'> 360 hr 20 min</p>
+              </div>
             </div>
           </div>
         </div>
@@ -51,11 +55,14 @@ function Playlist() {
           <svg role="img" height="32" width="32" viewBox="0 0 24 24" class="Svg-sc-1bi12j5-0 jgfuCe dot">
             <path d="M4.5 13.5a1.5 1.5 0 100-3 1.5 1.5 0 000 3zm15 0a1.5 1.5 0 100-3 1.5 1.5 0 000 3zm-7.5 0a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"></path>
           </svg>
+          <svg role="img" height="24" width="24" viewBox="0 0 24 24" class="Svg-sc-1bi12j5-0 jgfuCe share">
+            <path d="M18.5 4a1.5 1.5 0 100 3 1.5 1.5 0 000-3zM15 5.5a3.5 3.5 0 111.006 2.455L9 12l7.006 4.045a3.5 3.5 0 11-.938 1.768l-6.67-3.85a3.5 3.5 0 110-3.924l6.67-3.852A3.513 3.513 0 0115 5.5zm-9.5 5a1.5 1.5 0 100 3 1.5 1.5 0 000-3zm13 6.5a1.5 1.5 0 10-.001 3 1.5 1.5 0 00.001-3z"></path>
+          </svg>
         </div>
         {/* End of Button box */}
         {/* Table */}
         <div className='song-table'>
-          <div className='first-table-row d-flex'>
+          <div className='first-table-row d-lg-flex d-none'>
             <div className='first-table-num'>#</div>
             <div className='first-table-title'><p>TITLE</p></div>
             <div className='first-table-album'><p>ALBUM</p></div>
@@ -69,14 +76,14 @@ function Playlist() {
             </div>
           </div>
           <div className='content-table'>
-            {songs.map((song) =>(
+            {songs.map((song) => (
               <Song
-              id={song.id}
-              title={song.title}
-              artist={song.artist}
-              album={song.album}
-              date={song.date}
-              duration={song.duration} />
+                id={song.id}
+                title={song.title}
+                artist={song.artist}
+                album={song.album}
+                date={song.date}
+                duration={song.duration} />
             ))}
           </div>
         </div>
