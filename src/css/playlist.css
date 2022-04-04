@@ -181,6 +181,14 @@ svg.vertical-dot{
 .table-album p{
     margin-top: 16px;
 }
+.table-album a{
+    color: white;
+    text-decoration: none;
+}
+.table-album a:hover{
+    text-decoration: underline;
+    color: white;
+}
 .table-date{
     width: 23%;
 }

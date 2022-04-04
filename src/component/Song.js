@@ -38,8 +38,8 @@ function Song(props) {
         <div className='song-name'>
           <p className='song-title'>{props.title}</p>
           <NavLink
-          className='song-artist'
-          to={`/artist/${getArtistId(props.artist)}`}>
+            className='song-artist'
+            to={`/artist/${getArtistId(props.artist)}`}>
             {props.artist}
           </NavLink>
           <svg fill='white' role="img" height="24" width="24" title="more-icon-android" aria-labelledby="more-icon" data-testid="more-icon" viewBox="0 0 24 24" class="Svg-sc-1bi12j5-0 kVzeqZ vertical-dot">
@@ -47,7 +47,11 @@ function Song(props) {
           </svg>
         </div>
       </div>
-      <div className='table-album'><p>{props.album}</p></div>
+      <div className='table-album'>
+        <p>
+          <NavLink to={`/album/${props.album}`}>{props.album}</NavLink>
+        </p>
+      </div>
       <div className='table-date'><p>{props.date}</p></div>
       <div className='table-time'>
         <svg id={'heart' + props.id} role="img" height="16" width="16" viewBox="0 0 16 16" class="Svg-sc-1bi12j5-0 jgfuCe liked-heart hiding">

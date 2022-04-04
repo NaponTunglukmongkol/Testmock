@@ -1,12 +1,12 @@
-.header{
+.album-header{
     margin-left: 32px;
     color: white;
 }
-.playlist-image{
+.album-playlist-image{
     width: 232px;
     height: 232px;
 }
-.info{
+.album-info{
     margin-left: 24px;
 }
 .type{
@@ -15,24 +15,24 @@
     font-weight: bold;
     margin-bottom: 0px;
 }
-.playlist-title{
+.album-playlist-title{
     margin-top: 0px;
     font-size: 96px;
     font-weight: bold;
 }
-.playlist-description{
+.album-playlist-description{
     margin: 0px;
     color: grey;
 }
-.playlist-description-2{
+.album-playlist-description-2{
     margin: 0px;
     color: grey;
     font-size: 14px;
 }
-.highlight{
+.album-highlight{
     color: white;
 }
-.small-gap{
+.album-small-gap{
     margin-left: 5px;
 }
 .button-box-place{
@@ -40,21 +40,21 @@
     height: 104px;
     margin-top: 10px;
 }
-.play-button{
+.album-play-button{
     background-color: #1ed760;
     width: 56px;
     height: 56px;
     border-radius: 50%;
     margin-right: 32px;
 }
-.play-button svg{
+.album-play-button svg{
     display: block;
     position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
-svg.heart{
+svg.album-heart{
     fill: grey;
     display: block;
     position: relative;
@@ -228,4 +228,39 @@ svg.dot:hover{
 }
 .hiding{
     display: none;
+}
+@media screen and (max-width: 800px){
+    .album-header{
+        text-align: center;
+        margin: 0;
+    }
+    .album-info{
+        margin: 0;
+    }
+    .album-playlist-image{
+        margin-top: -10px;
+        height: 152px;
+        width: 152px;
+    }
+    .album-playlist-title{
+        font-size: 36px;
+        margin-top: 20px;
+    }
+    .album-highlight{
+        color: grey;
+    }
+    .album-highlight svg{
+        fill: grey;
+    }
+    svg.album-heart{
+        display: none;
+    }
+    .album-play-button{
+        text-align: center;
+        display: block;
+        position: absolute;
+        margin-top: 20px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 }
