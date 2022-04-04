@@ -51,9 +51,9 @@ function SideNav() {
                     hidePopUp('liked')
                 }} />
             <div>
-                <a href='#'>
+                <NavLink to={`/`}>
                     <img className='spotify' src={spotify} />
-                </a>
+                </NavLink>
                 <button className="navbar-toggler" type="button" onClick={() => navbarCollapse('sideNav')}>
                     <span className="navbar-toggler-icon"></span>
                 </button>

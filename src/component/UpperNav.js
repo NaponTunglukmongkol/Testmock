@@ -14,7 +14,10 @@ function UpperNav() {
     return (
         <nav className="navbar navbar-expand-lg semi-black upper">
             <div className="container-fluid">
-                <img className='spotify' src={spotify} />
+                <NavLink
+                    to={`/`}>
+                    <img className='spotify' src={spotify} />
+                </NavLink>
                 <button className="navbar-toggler" type="button" onClick={() => navbarCollapse('navbarSupportedContent')}>
                     <span className="navbar-toggler-icon"></span>
                 </button>

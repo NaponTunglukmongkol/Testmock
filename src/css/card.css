@@ -63,3 +63,18 @@
 .cardlink{
     text-decoration: none;
 }
+@media screen and (max-width: 800px){
+    .cards{
+        height: 350px;
+        width: 292px;
+        text-align: center;
+        padding: 0;
+    }
+    .img-border{
+        width: 292px;
+        height: 292px;
+    }
+    .cardtext{
+        display: none;
+    }
+}
