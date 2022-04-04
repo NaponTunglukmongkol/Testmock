@@ -13,6 +13,31 @@ function UpperNav() {
 
     return (
         <nav className="navbar navbar-expand-lg semi-black upper">
+            <div id='phone-navbar' className='phone-navbar'>
+                <svg onClick={() => navbarCollapse('phone-navbar')} role="img" height="24" width="24" fill='white' viewBox="0 0 24 24" class="Svg-sc-1bi12j5-0 kVzeqZ">
+                    <path d="M3.293 3.293a1 1 0 011.414 0L12 10.586l7.293-7.293a1 1 0 111.414 1.414L13.414 12l7.293 7.293a1 1 0 01-1.414 1.414L12 13.414l-7.293 7.293a1 1 0 01-1.414-1.414L10.586 12 3.293 4.707a1 1 0 010-1.414z"></path>
+                </svg>
+                <div className='phone-navbar-content'>
+                    <h4>Log in</h4>
+                    <h4>Sign up</h4>
+                    <h1>-</h1>
+                    <div className='phone-link'>
+                        <a href='https://www.spotify.com/sg-en/premium/'>Premium</a>
+                    </div>
+                    <div className='phone-link'>
+                        <a href='https://support.spotify.com/sg-en/'>Help</a>
+                    </div>
+                    <div className='phone-link'>
+                        <a href='https://www.spotify.com/sg-en/download/mac/?referrer=mwp'>Download</a>
+                    </div>
+                    <div className='phone-link'>
+                        <a href='https://www.spotify.com/sg-en/legal/privacy-policy/'>Privacy</a>
+                    </div>
+                    <div className='phone-link'>
+                        <a href='https://www.spotify.com/sg-en/legal/end-user-agreement/'>Terms</a>
+                    </div>
+                </div>
+            </div>
             <div className="container-fluid">
                 <NavLink
                     to={`/`}>
@@ -69,7 +94,7 @@ function UpperNav() {
                         <path d="M7 1.75a5.25 5.25 0 100 10.5 5.25 5.25 0 000-10.5zM.25 7a6.75 6.75 0 1112.096 4.12l3.184 3.185a.75.75 0 11-1.06 1.06L11.304 12.2A6.75 6.75 0 01.25 7z"></path>
                     </svg>
                     <button className='btn btn-light s'>OPEN APP</button>
-                    <svg role="img" height="24" width="24" fill='white' viewBox="0 0 24 24" class="Svg-sc-1bi12j5-0 kVzeqZ">
+                    <svg onClick={() => navbarCollapse('phone-navbar')} role="img" height="24" width="24" fill='white' viewBox="0 0 24 24" class="Svg-sc-1bi12j5-0 kVzeqZ">
                         <path d="M21 6H3V4h18v2zm0 14H3v-2h18v2zm0-7H3v-2h18v2z"></path>
                     </svg>
                 </div>
