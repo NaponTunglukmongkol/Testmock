@@ -6,7 +6,7 @@ import { navbarCollapse } from '../function/function.js';
 import spotify from '../resource/SpotifyWithName.png';
 import SideNavPopUp from './SideNavPopUp.js';
 
-function UpperNav() {
+function SideNav() {
     const location = useLocation();
     var isHomeActive = location.pathname == '/' ? true : false;
     var isSearchActive = location.pathname == '/search' ? true : false;
@@ -120,4 +120,4 @@ function UpperNav() {
         </nav>
     );
 }
-export default UpperNav;
+export default SideNav;
