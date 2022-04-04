@@ -2,6 +2,11 @@
     margin-left: 32px;
     font-weight: bold;
 }
+.title-phone{
+    display: none;
+    margin-left: 32px;
+    font-weight: bold;
+}
 .card-placement{
     margin-left: 32px;
     margin-right: 32px;
@@ -34,8 +39,15 @@
         -ms-overflow-style: none;
         scrollbar-width: none;
         position: relative;
+        width: 95%;
     }
     .card-placement::-webkit-scrollbar{
         display: none;
+    }
+    .title{
+        display: none;
+    }
+    .title-phone{
+        display: block;
     }
 }
