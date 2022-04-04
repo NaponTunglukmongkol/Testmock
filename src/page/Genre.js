@@ -19,6 +19,7 @@ function Genre() {
             {data.map((genre) => (
               <Card
                 key={genre.id}
+                id={genre.id}
                 title={genre.title}
                 image={genre.image}
                 description={genre.description} />
